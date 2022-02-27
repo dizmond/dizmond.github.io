@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Wordle Generator & Solver </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="wordleSolver.js"></script>
+  </head>
+
+  <body>
+    <div>
+        <h1>WORDLE</h1>
+    </div>
+    <button onclick="showLetters()">click me</button>
+    <div id = "container">
+        <table>
+            <tr>
+                <td><input type="text" required minlength = "1" maxlength = "1" oninput="addWord(this.value)"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1" oninput="addWord(this.value)"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1" oninput="addWord(this.value)"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1" oninput="addWord(this.value)"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1" oninput="addWord(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+                <td><input type="text" required minlength = "1" maxlength = "1"></td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>
