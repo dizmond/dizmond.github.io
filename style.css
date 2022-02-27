@@ -1,0 +1,38 @@
+h1 {
+    color: blueviolet;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Calibri" , serif;
+}
+html {
+    background-color: rgb(221, 218, 215);
+}
+input {
+    width: 5%;
+    height: 5%;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 18px 20px;
+    margin: 2px 0;
+}
+body {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+table {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+td {
+    white-space: nowrap;
+}
+
+#container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
