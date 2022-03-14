@@ -19,8 +19,15 @@ const word = ["W","A","T","E","R"];
 var clickCount = 1;
 var rowNum = 6;
 var official_word_guessed_flag = false;
+
+/* ADDWORD function checks to see if the word has been guessed.
+    If it hasn't, then it takes uppercase letter input from text box and
+    saves it into 2d array.
+*/
 function addWord(input,id, row, column) {
     if (official_word_guessed_flag == false) {
+        onkeyup(id);
+        input = input.toUpperCase();
         letters[row][column] = input;
     }
 }
@@ -57,3 +64,21 @@ function showLetters() {
         console.log(letters.join(','));
     }   
 }
+
+
+/* ONKEYUP function turns every lowercase input into an upper case letter in text boxes.
+    It also prevents other characters from being input from the keyboard by using regex.
+*/
+function onkeyup(id) {
+    var language = document.getElementById(id); 
+    language.value = language.value.toUpperCase(); 
+
+    if (language.value.match(/[^A-Z]/)) {
+        language.value = language.value.replace(/[^A-Z]/, "");
+    }
+    else if (language.value.match(/[0-9]/)) {
+        language.value = language.value.replace(/[0-9]/,"");
+    }
+}
+
+
